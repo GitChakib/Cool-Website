@@ -4,22 +4,31 @@
      <title> Dashboard </title>
 
   <head>
-   <h1> Website Name </h1>
+   <a href = "Dashboard.html"><h1> Website Name  </h1> </a>
+   <form>
+     <input type="text" placeholder="Search for cars...">
+     <button type="submit">Search</button>
+  </form>
+   <a href = "Login.html"><button type="button"> Sign up </button> </a>
   </head>
 
   <body>
-<p>
-   <h1> Popular listings </h1>
+<section id = "popular-listings">
+   <h1> Popular Auctions </h1>
     <img src = "Images/_vcd5.jpg" height = "600" width = "900" title = "GOLF MK7!!!">
      <h3> car name </h3>
-    
      <p> price </p>
      <p> year </p>
      <p> mileage </p>
      <p> displacement </p>
     <!.. hado rahom nta3 listings ..!>
-</p>    
+</section>    
   <h2> All listings </h2>
+     <form>
+     <input type="text" placeholder="Search for cars...">
+     <button type="submit">Search</button>
+  </form>
+  <button type="button"> Sort by: </button>
     <div id = "carlisting">
       <div class = "car">
           <h3> Audi RS5 </h3>
@@ -46,7 +55,7 @@
           <p> displacement: 6.2L </p>
       </div>
     </div>
-    <div class="car"
+    <article class="car"
      data-year="2020"
      data-price="15000"
      data-mileage="30000"
@@ -57,12 +66,12 @@
     <p>Price: $15000</p>
     <p>Mileage: 30000</p>
     <p>Displacement: 2.5L</p>
-   </div>
-
+   </article>
 
 
   </body>
 <footer>
+
 <p>Copyright © 2024 Car Marketplace. All rights reserved.</p>
 <p>Contact me: chakibfehd.senoussi@etu.univ-batna2.dz</p>
 
