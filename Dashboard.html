@@ -9,11 +9,15 @@
      <input type="text" placeholder="Search for cars...">
      <button type="submit">Search</button>
   </form>
-   <a href = "Login.html"><button type="button"> Sign up </button> </a>
+   <a href = "Login.html"> <button type="button"> Sign up </button> </a>
+   <a href = "About_Us.html"> <button type = "button">  About us </button> </a>
+   <a href = "Create_Listing.html"> <button type = "button"> Auction a Car </button> </a>
   </head>
 
   <body>
+
 <section id = "popular-listings">
+  
    <h1> Popular Auctions </h1>
     <img src = "Images/_vcd5.jpg" height = "600" width = "900" title = "GOLF MK7!!!">
      <h3> car name </h3>
@@ -22,13 +26,20 @@
      <p> mileage </p>
      <p> displacement </p>
     <!.. hado rahom nta3 listings ..!>
-</section>    
+
+</section>   
+
+<section>
+
   <h2> All listings </h2>
-     <form>
-     <input type="text" placeholder="Search for cars...">
-     <button type="submit">Search</button>
-  </form>
-  <button type="button"> Sort by: </button>
+
+   <select id = "Sort by:">
+      <option value = "" selected disabled> Sort by </option>
+      <option value = "price"> Price </option>
+      <option value = "year"> Year </option>
+      <option value = "mileage"> Mileage </option>
+    </select>
+
     <div id = "carlisting">
       <div class = "car">
           <h3> Audi RS5 </h3>
@@ -67,7 +78,7 @@
     <p>Mileage: 30000</p>
     <p>Displacement: 2.5L</p>
    </article>
-
+  </section>
 
   </body>
 <footer>
