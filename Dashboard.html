@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html>
-<!.. this is a comment ..!>
-     <title> Dashboard </title>
 
   <head>
 
@@ -22,9 +20,9 @@
    </form>
    </div>
    <nav>
-   <a href = "Login.html"> <button type="button"> Sign up </button> </a>
-   <a href = "About_Us.html"> <button type = "button">  About us </button> </a>
-   <a href = "Create_Listing.html"> <button type = "button"> Auction a Car </button> </a>
+    <a href = "Login.html"> Sign up </a>
+    <a href = "About_Us.html"> About us </a>
+    <a href = "Create_Listing.html"> Auction a Car </a>
    </nav>
    </header>
 
@@ -45,58 +43,60 @@
 
   <h2> All listings </h2>
 
-   <select id = "Sort by:">
+   <select id = "Sort-by">
       <option value = "" selected disabled> Sort by </option>
       <option value = "price"> Price </option>
       <option value = "year"> Year </option>
       <option value = "mileage"> Mileage </option>
     </select>
-
-    <div id = "carlisting">
+    <div id = "carlistings">
+   <article class="car-listing" data-year="2019" data-price="65000" data-mileage="12000"  data-displacement="3.0">
       <div class = "car">
           <h3> Audi RS5 </h3>
-          <img src = "Images/XDgYY.jpg" height = "300">
+         <a href="Car_Listing.html"> <img src = "Images/XDgYY.jpg" height = "300"> </a>
           <p> year: 2019 </p>
           <p> price: $65000 </p>
           <p> mileage: 12000 </p>
           <p> displacement: 3.0L </p> 
       </div>
+      </article>
+    <article class="car-listing" data-year="2018" data-price="55000" data-mileage="49000"  data-displacement="3.0">
      <div class = "car">
           <h3> Range Rover Sport P300 </h3>
-          <img src = "images/ToTxv.jpg" height = "300">
+        <a href="Car_Listing.html"><img src = "images/ToTxv.jpg" height = "300"></a>
           <p> year: 2018 </p>
           <p> price: $55000 </p>
           <p> mileage: 25000 </p>
           <p> displacement: 3.0L </p>
       </div>
+      </article>
+        <article class="car-listing" data-year="2016" data-price="32000" data-mileage="15000"  data-displacement="6.2">
         <div class = "car">
           <h3> Chevrolet Corvette C7 Z06 </h3>
-          <img src = "Images/30RJdN1G-aocY4fs.jpeg" height = "300">
+          <a href="Car_Listing.html"><img src = "Images/30RJdN1G-aocY4fs.jpeg" height = "300"></a>
           <p> year: 2016 </p>
-          <p> price: $45000 </p>
+          <p> price: $32000 </p>
           <p> mileage: 15000 </p>
           <p> displacement: 6.2L </p>
-      </div>
-    </div>
-    <article class="car"
-     data-year="2020"
-     data-price="15000"
-     data-mileage="30000"
-     data-displacement="2.5">
-    <h3 class = "car-name">Toyota 4Runner TRD Pro</h3>
+        </div>
+        </article>
+    <article class="car-listing" data-year="2025" data-price="15000" data-mileage="30000"  data-displacement="2.5">
+    <div class = "car">
+    <h3 class = "car-name"> Toyota 4Runner TRD Pro </h3>
    <a href="Car_Listing.html"> <img src = "Images/KDylXovr-mPqmZiTK-L.jpeg" height = "300"> </a>
     <p>Year: 2025</p>
     <p>Price: $15000</p>
     <p>Mileage: 30000</p>
     <p>Displacement: 2.5L</p>
+    </div>
    </article>
+  </div>
   </section>
-
-  </body>
 <footer>
 
-<p>Copyright © 2024 Car Marketplace. All rights reserved.</p>
+<p>Copyright © 2026 Car Marketplace. All rights reserved.</p>
 <p>Contact me: chakibfehd.senoussi@etu.univ-batna2.dz</p>
 
-</footer>
+ </footer>
+</body>
 </html>
