@@ -3,3 +3,6 @@ body{
     color: white;
     font-family: 'vend', sans-serif;
 }
+h1{
+    border-style: dotted;
+}
