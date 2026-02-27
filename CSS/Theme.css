@@ -1,19 +1,34 @@
 header{
     position: fixed;
-    background-color: rgb(71, 71, 71);
+    background-color: rgb(31, 31, 32);
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
 }
 .popular-listings{
-    border: 1px solid white;
-    width: 1400px;
-    margin: 0 auto;
+    width: 1200px;
+    margin: auto;
+}
+.carlistings{
+    display: inline-block;
+    border: 1px solid gray;
+    width: 2000px;
+}
+.car-listing{
+    display: inline-block;
+    width: 400px; height: 400px;
+    margin: 20px;
+}
+.car{
+    display: inline-block;
+    height: 400px; width: 350px;
+    margin: 20px;
+    border: 1px solid gray;
 }
 body{
     margin: 0;
-    margin-top: 100px;
+    margin-top: 150px;
     background-color: rgb(31, 31, 32);
     color: white;
     font-family: 'vend', sans-serif;
