@@ -1,8 +1,25 @@
+header{
+    position: fixed;
+    background-color: rgb(71, 71, 71);
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.popular-listings{
+    border: 1px solid white;
+    width: 1400px;
+    margin: 0 auto;
+}
 body{
+    margin: 0;
+    margin-top: 100px;
     background-color: rgb(31, 31, 32);
     color: white;
     font-family: 'vend', sans-serif;
 }
-h1{
-    border-style: dotted;
+footer{
+    border-top: 1px gray solid;
+    width: 500px; height: 200px;
+    margin: auto;
 }
