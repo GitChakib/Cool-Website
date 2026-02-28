@@ -1,6 +1,6 @@
 header{
     position: fixed;
-    background-color: rgb(31, 31, 32);
+    background-color: #171717;
     top: 0;
     left: 0;
     width: 100%;
@@ -13,7 +13,8 @@ header{
 .carlistings{
     display: inline-block;
     border: 1px solid gray;
-    width: 2000px;
+    width: auto;
+    margin: 20px;
 }
 .car-listing{
     display: inline-block;
@@ -29,7 +30,7 @@ header{
 body{
     margin: 0;
     margin-top: 150px;
-    background-color: rgb(31, 31, 32);
+    background-color: #171717;
     color: white;
     font-family: 'vend', sans-serif;
 }
@@ -37,4 +38,8 @@ footer{
     border-top: 1px gray solid;
     width: 500px; height: 200px;
     margin: auto;
+}
+a{
+    color: white;
+    text-decoration: none;
 }
