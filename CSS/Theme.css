@@ -12,20 +12,29 @@ header{
 }
 .carlistings{
     display: inline-block;
-    border: 1px solid gray;
-    width: auto;
-    margin: 20px;
+    width: 1610px;
+    margin-left: 80px;
 }
 .car-listing{
     display: inline-block;
-    width: 400px; height: 400px;
-    margin: 20px;
+    width: 350px; height: 400px;
+    margin: 10px;
 }
 .car{
-    display: inline-block;
-    height: 400px; width: 350px;
-    margin: 20px;
-    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    height: 370px; width: 340px;
+    margin: 60px;
+}
+.car img{
+    aspect-ratio: 4/3;
+    width: 100%; height: auto;
+}
+.car h3{
+    margin: 10px;
+}
+.car p{
+    margin: 5px;
 }
 body{
     margin: 0;
