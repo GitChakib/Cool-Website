@@ -7,8 +7,33 @@ header{
     z-index: 1000;
 }
 .popular-listings{
+    border: solid gray 1px;
+    width: 1610px;
+    height: 1000px;
+    margin: auto;
+}
+.popular-listings h1{
+    margin: 10px;
+}
+.popular-listings .car{
+    height: auto;
+    border: solid gray 1px;
+    position: relative;
     width: 1200px;
     margin: auto;
+}
+.popular-listings .car img{
+    height: auto;
+    width: 100%;
+    display: block;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+.popular-listings .car .overlay{
+    width: 100%;
+    position: absolute;  
+    bottom: 0px;        
+    color: white;        
 }
 .carlistings{
     display: inline-block;
@@ -31,7 +56,7 @@ header{
     width: 100%; height: auto;
 }
 .car h3{
-    margin: 10px;
+    margin: 5px;
 }
 .car p{
     margin: 5px;
