@@ -12,7 +12,7 @@ header{
 }
 .popular-listings{
     text-align: center;
-    border-top: solid rgb(70, 70, 70) 1px;
+    border-top: solid rgb(48, 48, 48) 1px;
     margin: auto;
     max-width: 1500px;
     height: 650px;
@@ -119,5 +119,8 @@ footer{
 }
 a{
     color: white;
-    text-decoration: none;
+    text-decoration: none
+}
+a:hover{
+    text-decoration: underline;
 }
