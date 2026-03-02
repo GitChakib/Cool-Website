@@ -8,8 +8,8 @@
   <title> Dashboard </title>
   <link rel="stylesheet" href="CSS/Theme.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lexend:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lexend:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
  
   </head>
 
@@ -30,10 +30,12 @@
    </header>
 
 <section class = "popular-listings">
-  <h1> Popular Auctions </h1>
   <div class = "popular-listings" id = "popular-listings">
     <div class = "car" data-year="2025" data-price="276000" data-mileage="1000"  data-displacement="3.0">
     <img src = "Images/LqnhS.jpg">
+     <div class = "overlay2">
+     <h3> Popular </h3>
+     </div>
      <div class = "overlay">
      <h3> 2025 Ferrari 296 GTS </h3>
      <p> 3.0L Hybrid, 1100KM, RWD, 7 Speed Dual Clutch (Automatic) </p>
@@ -42,6 +44,7 @@
 </section>   
 
 <section class = "all-listings">
+  <div class = "all-listings-nav">
   <h2> All listings </h2>
    <select id = "Sort-by">
       <option value = "" selected disabled> Sort by </option>
@@ -49,6 +52,7 @@
       <option value = "year"> Year </option>
       <option value = "mileage"> Mileage </option>
     </select>
+  </div>
   <div class = "carlistings">
    <article class="car-listing" data-year="2019" data-price="65000" data-mileage="12000"  data-displacement="3.0">
       <div class = "car">

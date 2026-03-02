@@ -3,12 +3,16 @@ header{
     background-color: #171717;
     top: 0;
     left: 0;
-    width: 100%;
+    right: 0;
+    width: 1500px;
+    max-width: 1500px;
+    margin: auto;
     z-index: 1000;
+    border: solid gray 1px;
 }
 .popular-listings{
-    width: 1610px;
-    height: 700px;
+    max-width: 1500px;
+    height: 650px;
     margin: auto;
 }
 .popular-listings h1{
@@ -38,24 +42,51 @@ header{
     color: white;
     background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%)
 }
+.popular-listings .car .overlay h3{
+    left: 5px;
+    bottom: 5px;
+    position: relative;
+}
+.popular-listings .car .overlay p{
+    left: 5px;
+    bottom: 5px;
+    position: relative;
+}
+.popular-listings .car .overlay2{
+    width: 100%;
+    position: absolute;  
+    top: 0px;        
+    color: white;
+    background: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%)
+}
+.popular-listings .car .overlay2 h3{
+    left: 5px;
+    position: relative;
+}
+.all-listings-nav{
+    display: flex;
+    max-width: 1500px;
+    margin: auto;
+}
+.all-listings-nav h2{
+    margin-left: 30px;
+}
+
 .carlistings{
-    display: inline-block;
-    width: 1610px;
-    margin-left: 80px;
+    max-width: 1500px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 350px);
+    gap: 20px;
+    width: auto;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 .car-listing{
-    display: inline-block;
+    margin-top: 5px;
     width: 350px; height: 400px;
-    margin: 10px;
+    margin-left: 15px;
 }
-.car{
-    display: flex;
-    flex-direction: column;
-    height: 370px; width: 340px;
-    margin: 60px;
-    overflow: hidden;
-    border-radius: 12px;
-}
+
 .car img{
     aspect-ratio: 4/3;
     width: 100%; height: 95%;
@@ -79,7 +110,7 @@ body{
 
 footer{
     border-top: 1px gray solid;
-    width: 500px; height: 200px;
+    width: 1610px; height: 200px;
     margin: auto;
     margin-top: 100px;
 }
