@@ -102,6 +102,14 @@ header{
 .car p{
     margin: 5px;
 }
+.pagination{
+    margin-top: 100px;
+    text-align: center;
+}
+.pagination a{
+    display: inline-block;
+    padding: 8px 15px;
+}
 body{
     margin: 0;
     margin-top: 90px;
@@ -110,12 +118,11 @@ body{
     font-family: 'Noto Sans', sans-serif;
     font-weight: 300;
 }
-
 footer{
     border-top: 1px gray solid;
     width: 1610px; height: 200px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 70px;
 }
 a{
     color: white;
