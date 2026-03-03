@@ -1,7 +1,7 @@
 header{
     display: inline-flex;
     position: fixed;
-    background-color: #171717;
+    background-color: #0c1018;
     top: 0;
     left: 5px;
     right: 0;
@@ -113,7 +113,7 @@ header{
 body{
     margin: 0;
     margin-top: 90px;
-    background-color: #171717;
+    background-color: #0c1018;
     color: white;
     font-family: 'Noto Sans', sans-serif;
     font-weight: 300;
