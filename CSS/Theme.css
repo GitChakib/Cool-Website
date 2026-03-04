@@ -10,6 +10,10 @@ header{
     margin: auto;
     z-index: 1000;
 }
+header img{
+    margin-top: 20px;
+    width: 200px; 
+}
 .popular-listings{
     text-align: center;
     border-top: solid rgb(48, 48, 48) 1px;
