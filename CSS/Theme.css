@@ -14,9 +14,18 @@ header img{
     margin-top: 20px;
     width: 200px; 
 }
+Select{
+    color: white;
+    background-color: #0c1018;
+    display: inline-block;
+    padding: 0px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: solid 1px #1b2331;
+}
 .popular-listings{
     text-align: center;
-    border-top: solid rgb(48, 48, 48) 1px;
+    border-top: solid #1b2331 1px;
     margin: auto;
     max-width: 1500px;
     height: 650px;
