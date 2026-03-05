@@ -49,6 +49,35 @@ Select{
     border-radius: 10px;
     border: solid 1px #1b2331;
 }
+.dropdown button{
+    padding: 10px;
+    width: auto;
+    color: white;
+    font-size: 17px;
+    font-family: 'lexend';
+    background-color: #0c1018;
+    border-radius: 10px;
+    border: solid 1px #222D43;
+    cursor: pointer;
+}
+.menu{
+    background-color: #1b2331;
+    border-radius: 5px;
+}
+.dropdown .menu{
+    display: none;
+}
+.dropdown .menu a{
+    padding: 5px;
+    display: block;
+    text-decoration: none;
+}
+.menu{
+    font-family: 'lexend'
+}
+.dropdown:active .menu{
+    display: block;
+}
 .popular-listings{
     text-align: center;
     border-top: solid #1b2331 1px;
