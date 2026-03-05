@@ -46,11 +46,12 @@
 <section class = "all-listings">
   <div class = "all-listings-nav">
   <h2> All listings </h2>
-   <select id = "Sort-by">
+   <div class = "dropdown">
+    <select id = "Sort-by">
      <div class = "values">
       <option value = "" selected disabled> Price </option>
-      <option value = "low-price"> Low → High </option>
-      <option value = "high-price">  High → Low </option>
+      <option value = "low-price"> Lowest to Highest </option>
+      <option value = "high-price">  Highest to Lowest </option>
      </div>
    </select>
    <select id = "Sort-by">
@@ -64,10 +65,11 @@
    <select id = "Sort-by">
      <div class = "values">
       <option value = "" selected disabled> Mileage </option>
-      <option value = "low-miles"> Most → Lowest </option>
-      <option value = "high-miles">  Lowest → Most </option>
+      <option value = "low-miles"> Most to Lowest </option>
+      <option value = "high-miles">  Lowest to Most </option>
      </div>
    </select>
+   </div>
   </div>
   <div class = "carlistings">
    <article class="car-listing" data-year="2019" data-price="65000" data-mileage="12000"  data-displacement="3.0">
