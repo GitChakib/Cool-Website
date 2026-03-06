@@ -15,16 +15,16 @@ header img{
     width: 200px; 
 }
 .all-listings-nav{
+    position: relative;
     display: flex;
     max-width: 1500px;
     margin: auto;
     padding-bottom: 10px;
 }
 .all-listings-nav .dropdown{
+    position: relative;
     margin: auto;
     margin-right: 30px;
-    gap: 10px;
-    display: flex;
 }
 select:hover{
     background-color: #222D43;
@@ -34,48 +34,40 @@ select:hover{
     text-align: center;
     margin-left: 30px;
 }
-
-Select{
-    text-align: center;
-    font-family: "lexend";
-    font-size: 15px;
-    height: 40px;
-    width: auto;
-    color: white;
-    background-color: #0c1018;
-    display: inline-block;
-    padding: 0px;
-    cursor: pointer;
-    border-radius: 10px;
-    border: solid 1px #1b2331;
-}
 .dropdown button{
     padding: 10px;
     width: auto;
     color: white;
     font-size: 17px;
-    font-family: 'lexend';
+    font-family: 'Noto Sans';
     background-color: #0c1018;
     border-radius: 10px;
     border: solid 1px #222D43;
     cursor: pointer;
+    position: relative;
+}
+.filters{
+    display: flex;
+    padding: 10px;
+
 }
 .menu{
+    display: none;
+    position: absolute;
     background-color: #1b2331;
     border-radius: 5px;
-}
-.dropdown .menu{
-    display: none;
+    min-width: 10px;
+    border: solid 1px #222D43;
+    z-index: 10;
 }
 .dropdown .menu a{
     padding: 5px;
     display: block;
     text-decoration: none;
+    font-family: 'Noto Sans';
+    padding: 10px;
 }
-.menu{
-    font-family: 'lexend'
-}
-.dropdown:active .menu{
+.dropdown:hover .menu{
     display: block;
 }
 .popular-listings{
@@ -174,7 +166,7 @@ body{
     margin-top: 90px;
     background-color: #0c1018;
     color: white;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'noto sans', sans-serif;
     font-weight: 300;
 }
 footer{
