@@ -26,13 +26,10 @@ header img{
     margin: auto;
     margin-right: 30px;
 }
-select:hover{
-    background-color: #222D43;
-}
 .all-listings-nav h2{
     margin: auto;
     text-align: center;
-    margin-left: 30px;
+    margin-left: 25px;
 }
 .dropdown button{
     padding: 10px;
@@ -56,18 +53,19 @@ select:hover{
     position: absolute;
     background-color: #1b2331;
     border-radius: 5px;
-    min-width: 10px;
+    min-width: 160px;
     border: solid 1px #222D43;
     z-index: 10;
 }
 .dropdown .menu a{
-    padding: 5px;
     display: block;
+    padding: 5px;
     text-decoration: none;
     font-family: 'Noto Sans';
-    padding: 10px;
+    padding: 12px;
 }
 .dropdown:hover .menu{
+    margin-top: 3px;
     display: block;
 }
 .popular-listings{
