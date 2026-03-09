@@ -5,21 +5,24 @@ header{
     top: 0;
     left: 5px;
     right: 0;
-    width: 1500px;
     max-width: 1500px;
     margin: auto;
     z-index: 1000;
+    padding-bottom: 20px;
 }
 header img{
     margin-top: 20px;
     width: 200px; 
 }
 .search input{
+    margin-top: 20px;
+    background-color:#1b2331;
     border: solid 1px #222D43;
-    min-width: 300px;
+    min-width: 400px;
     margin-left: 200px;
     height: 40px;
     border-radius: 20px;
+    padding-left: 20px;
 }
 .all-listings-nav{
     position: relative;
@@ -76,6 +79,7 @@ header img{
     display: block;
 }
 .popular-listings{
+    justify-content: center;
     text-align: center;
     border-top: solid #1b2331 1px;
     margin: auto;
@@ -89,7 +93,7 @@ header img{
 .popular-listings .car{
     height: auto;
     position: relative;
-    width: 1200px;
+    max-width: 1200px;
     margin: 20px auto;
     overflow: hidden;
     border-radius: 12px;
@@ -97,7 +101,7 @@ header img{
 }
 .popular-listings .car img{
     height: 600px;
-    width: 100%;
+    max-width: 1200px;
     display: block;
     aspect-ratio: 4/3;
     object-fit: cover;
@@ -135,15 +139,15 @@ header img{
     max-width: 1500px;
     display: grid;
     grid-template-columns: repeat(auto-fill, 350px);
+    justify-content: center;
     gap: 20px;
-    width: auto;
-    margin: 0 auto;
+    margin: auto;
     box-sizing: border-box;
 }
 .car-listing{
+    margin: auto;
     margin-top: 5px;
     width: 350px; height: 400px;
-    margin-left: 15px;
 }
 
 .car img{
