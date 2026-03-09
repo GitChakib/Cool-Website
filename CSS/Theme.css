@@ -14,6 +14,13 @@ header img{
     margin-top: 20px;
     width: 200px; 
 }
+.search input{
+    border: solid 1px #222D43;
+    min-width: 300px;
+    margin-left: 200px;
+    height: 40px;
+    border-radius: 20px;
+}
 .all-listings-nav{
     position: relative;
     display: flex;
@@ -158,9 +165,6 @@ header img{
 .pagination a{
     display: inline-block;
     padding: 8px 15px;
-}
-.search{
-    border: solid 1px black;
 }
 body{
     margin: 0;
