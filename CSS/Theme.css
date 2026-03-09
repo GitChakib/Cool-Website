@@ -3,23 +3,30 @@ header{
     position: fixed;
     background-color: #0c1018;
     top: 0;
-    left: 5px;
+    left: 0;
     right: 0;
     max-width: 1500px;
     margin: auto;
     z-index: 1000;
     padding-bottom: 20px;
+    border: solid white 1px;
 }
 header img{
     margin-top: 20px;
-    width: 200px; 
+    margin-left: 20px; 
+    width: 200px;
 }
 .search input{
+    justify-content: center;
+    margin-left: 300px;
+    color: white;
+    font-size: 15px;
+    font-family: 'Noto sans';
+    display: flex;
     margin-top: 20px;
     background-color:#1b2331;
-    border: solid 1px #222D43;
-    min-width: 400px;
-    margin-left: 200px;
+    border: solid 1px #ffff;
+    width: 400px;
     height: 40px;
     border-radius: 20px;
     padding-left: 20px;
@@ -38,8 +45,7 @@ header img{
 }
 .all-listings-nav h2{
     margin: auto;
-    text-align: center;
-    margin-left: 25px;
+    margin-left: 30px;
 }
 .dropdown button{
     padding: 10px;
@@ -175,7 +181,7 @@ body{
     margin-top: 90px;
     background-color: #0c1018;
     color: white;
-    font-family: 'noto sans', sans-serif;
+    font-family: 'Noto sans', sans-serif;
     font-weight: 300;
 }
 footer{
@@ -186,7 +192,7 @@ footer{
 }
 a{
     color: white;
-    text-decoration: none
+    text-decoration: none;
 }
 a:hover{
     text-decoration: underline;
