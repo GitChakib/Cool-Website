@@ -15,6 +15,13 @@ header img{
     margin-left: 20px; 
     width: 200px;
 }
+#sign-up{
+    height: 20px;
+    border: white solid 1px;
+    background-color: #e3ca11;
+    border-radius: 5px;
+
+}
 .search input{
     justify-content: center;
     margin-left: 300px;
