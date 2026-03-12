@@ -10,32 +10,29 @@ header{
     z-index: 1000;
     padding-bottom: 20px;
 }
-header img{
-    margin-top: 20px;
-    margin-left: 20px; 
-    width: 200px;
-}
 .header-buttons{
     display: flex;
     font-family: 'Noto sans';
+    gap: 15px;
+    font-weight: 400;
     margin: auto;
     font-size: 20px;
-    border: solid 1px white;
     margin-top: 25px;
     margin-left: 20px;
-
+}
+#brand-logo{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 200px;
 }
 header a:hover{
     text-decoration: none;
 }
-.header-buttons-single{
-    border: solid 1px white;
-}
 #sign-up{
-    border: white solid 1px;
     background-color: #e3ca11;
-    border-radius: 5px;
-
+    border-radius: 20px;
+    padding: 12px;
+    color: #0c1018;
 }
 .search input{
     justify-content: center;
@@ -43,13 +40,13 @@ header a:hover{
     color: white;
     font-size: 15px;
     font-family: 'Noto sans';
-    display: flex;
+    display: inline;
     margin-top: 20px;
     background-color:#1b2331;
-    border: solid 1px #ffff;
     width: 400px;
     height: 40px;
     border-radius: 20px;
+    border: none;
     padding-left: 20px;
 }
 .all-listings-nav{
