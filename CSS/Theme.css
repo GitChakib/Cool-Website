@@ -1,14 +1,39 @@
+@media (max-width: 535px){
+    .all-listings-nav h2{
+        display:none
+    }
+    #brand-logo{
+        width: 100px;
+    }
+}
+@media (max-width: 1000px){
+    #about-us{
+        display: none;
+    }
+    #auction-a-car{
+        display: none;
+    }
+}
 header{
-    display: inline-flex;
+    display: flex;
+    max-width: 1500px;
     position: fixed;
     background-color: #0c1018;
     top: 0;
     left: 0;
     right: 0;
-    max-width: 1500px;
+    width: 100%;
     margin: auto;
     z-index: 1000;
     padding-bottom: 20px;
+    border-bottom: solid #1b2331 1px;
+}
+.header-content{
+    max-width: 1500px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
 }
 .header-buttons{
     display: flex;
@@ -18,36 +43,39 @@ header{
     margin: auto;
     font-size: 20px;
     margin-top: 25px;
-    margin-left: 20px;
+    margin-right: 20px;
 }
 #brand-logo{
-    margin-top: 20px;
     margin-left: 20px;
+    margin-top: 20px;
     width: 200px;
 }
 header a:hover{
     text-decoration: none;
 }
 #sign-up{
+    white-space: nowrap;
     background-color: #e3ca11;
     border-radius: 20px;
     padding: 12px;
     color: #0c1018;
 }
+.search{
+    width: 400px;
+}
 .search input{
-    justify-content: center;
-    margin-left: 300px;
     color: white;
     font-size: 15px;
     font-family: 'Noto sans';
-    display: inline;
-    margin-top: 20px;
     background-color:#1b2331;
-    width: 400px;
+    max-width: 400px;
     height: 40px;
     border-radius: 20px;
     border: none;
     padding-left: 20px;
+    width: 100%;
+    min-width: 100px;
+    margin-top: 20px;
 }
 .all-listings-nav{
     position: relative;
@@ -55,6 +83,7 @@ header a:hover{
     max-width: 1500px;
     margin: auto;
     padding-bottom: 10px;
+    justify-content: center;
 }
 .all-listings-nav .dropdown{
     position: relative;
@@ -80,7 +109,6 @@ header a:hover{
 .filters{
     display: flex;
     padding: 10px;
-
 }
 .menu{
     display: none;
@@ -105,11 +133,11 @@ header a:hover{
 .popular-listings{
     justify-content: center;
     text-align: center;
-    border-top: solid #1b2331 1px;
     margin: auto;
     max-width: 1500px;
-    height: 650px;
+    max-height: 650px;
     margin: auto;
+    padding-top: 3px;
 }
 .popular-listings h1{
     margin: 10px;
@@ -124,7 +152,7 @@ header a:hover{
 
 }
 .popular-listings .car img{
-    height: 600px;
+    max-height: 600px;
     max-width: 1200px;
     display: block;
     aspect-ratio: 4/3;
@@ -204,7 +232,7 @@ body{
 }
 footer{
     border-top: 1px gray solid;
-    width: 1610px; height: 200px;
+    max-width: 1500px; height: 200px;
     margin: auto;
     margin-top: 70px;
 }
