@@ -15,8 +15,23 @@ header img{
     margin-left: 20px; 
     width: 200px;
 }
+.header-buttons{
+    display: flex;
+    font-family: 'Noto sans';
+    margin: auto;
+    font-size: 20px;
+    border: solid 1px white;
+    margin-top: 25px;
+    margin-left: 20px;
+
+}
+header a:hover{
+    text-decoration: none;
+}
+.header-buttons-single{
+    border: solid 1px white;
+}
 #sign-up{
-    height: 20px;
     border: white solid 1px;
     background-color: #e3ca11;
     border-radius: 5px;
