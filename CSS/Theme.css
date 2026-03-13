@@ -70,8 +70,8 @@ header a:hover{
     width: 200px;
 }
 #brand-logo-small{
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-top: -10px;
     width: 100px;
     display: none;
 }
