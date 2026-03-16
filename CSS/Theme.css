@@ -258,7 +258,6 @@ a:hover{
     text-decoration: underline;
 }
 .car-header{
-    border: white solid 1px;
     max-width: 1500px;
     margin: auto;
     padding-left: 20px;
@@ -269,7 +268,6 @@ a:hover{
     margin: auto;
     height: 603px;
     max-width: 1500px;
-    border: solid white 1px;
 }
 .main-image img{
     max-height: 603px;
@@ -278,11 +276,11 @@ a:hover{
 .image-cluster{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 250px);
+    grid-template-columns: repeat(auto-fill, 298px);
     gap: 1px;
     overflow: hidden;
 }
 .image-cluster img{
-    max-height: 250px;
-    max-width: 250px;
+    height: 200px;
+    max-width: 300px;
 }
