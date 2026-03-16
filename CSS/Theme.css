@@ -264,3 +264,25 @@ a:hover{
     padding-left: 20px;
     margin-top: 100px;
 }
+.car-image-block{
+    display: flex;
+    margin: auto;
+    height: 603px;
+    max-width: 1500px;
+    border: solid white 1px;
+}
+.main-image img{
+    max-height: 603px;
+    max-width: 903px;
+}
+.image-cluster{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    gap: 1px;
+    overflow: hidden;
+}
+.image-cluster img{
+    max-height: 250px;
+    max-width: 250px;
+}
