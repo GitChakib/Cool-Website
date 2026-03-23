@@ -263,6 +263,11 @@ a:hover{
     padding-left: 20px;
     margin-top: 100px;
 }
+.brief-description{
+    border: white 1px solid;
+    margin: auto;
+    max-width: 1500px;
+}
 .car-image-block{
     display: flex;
     margin: auto;
