@@ -258,15 +258,15 @@ a:hover{
     text-decoration: underline;
 }
 .car-header{
+    display: block;
     max-width: 1500px;
     margin: auto;
-    padding-left: 20px;
-    border: solid 1px white;
 }
-.brief-description{
-    border: white 1px solid;
-    margin: auto;
-    max-width: 1500px;
+#car-name{
+    margin: 0;
+}
+#brief-description{
+    margin: 0;
 }
 .car-image-block{
     display: flex;
@@ -294,9 +294,4 @@ a:hover{
     max-width: 1500px;
     margin: auto;
     max-height: 1000px;
-}
-.brief-description{
-    max-width: 1500px;
-    margin: auto;
-    padding-left: 20px;
 }
