@@ -291,7 +291,18 @@ a:hover{
 }
 .car-details{
     border: solid 1px white;
-    max-width: 1500px;
+    max-width: 903px;
     margin: auto;
     max-height: 1000px;
+}
+.sub-category{
+    font-size: 110%;
+    font-weight: 400;
+    flex: 1;
+}
+.category{
+    display: flex;
+    gap: 50px;
+    margin: auto;
+    flex: 1;
 }
