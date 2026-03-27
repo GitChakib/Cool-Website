@@ -279,6 +279,7 @@ a:hover{
     max-width: 903px;
 }
 .image-cluster{
+    max-width: 1500px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fill, 298px);
@@ -290,19 +291,25 @@ a:hover{
     max-width: 300px;
 }
 .car-details{
-    border: solid 1px white;
     max-width: 903px;
     margin: auto;
     max-height: 1000px;
+    padding-right: 600px;
 }
 .sub-category{
+    margin: 10px;
     font-size: 110%;
     font-weight: 400;
     flex: 1;
 }
 .category{
     display: flex;
-    gap: 50px;
     margin: auto;
-    flex: 1;
+}
+.details-border{
+    margin-top: 20px;
+    border: 1px solid #222D43;
+}
+.single-detail{
+    margin: 10px;
 }
