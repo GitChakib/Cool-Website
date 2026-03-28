@@ -268,33 +268,35 @@ a:hover{
 #brief-description{
     margin: 0;
 }
-.car-image-block{
-    display: flex;
-    margin: auto;
-    height: 603px;
+.car-image-block {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1px;
     max-width: 1500px;
+    margin: auto;
 }
 .main-image img{
-    max-height: 603px;
-    max-width: 903px;
-}
-.image-cluster{
-    max-width: 1500px;
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 298px);
-    gap: 1px;
-    overflow: hidden;
+    height: auto;
+    display: block;
 }
-.image-cluster img{
-    height: 200px;
+.image-cluster {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    width: 100%;
+    margin: auto;
+}
+.image-cluster img {
     max-width: 300px;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 .car-details{
     max-width: 903px;
     margin: auto;
     max-height: 1000px;
-    padding-right: 600px;
 }
 .sub-category{
     margin: 10px;
