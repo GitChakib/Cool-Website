@@ -70,6 +70,7 @@ header a:hover{
     width: 200px;
 }
 #brand-logo-small{
+    margin-right: 10px;
     margin-left: 10px;
     width: 80px;
     display: none;
@@ -297,6 +298,7 @@ a:hover{
     max-width: 903px;
     margin: auto;
     max-height: 1000px;
+    position: absolute;
 }
 .sub-category{
     margin: 10px;
