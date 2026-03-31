@@ -222,8 +222,15 @@ header a:hover{
     width: 100%; height: 95%;
     border-radius: 10px;
 }
-.car #brief-description{
+.car .brief-description{
+    font-size: 15px;
+    margin: 0;
+    padding-left: 5px;
+}
+.car .location{
     margin-left: 5px;
+    font-size: 15px;
+    color: #254077;
 }
 .car h3{
     margin: 5px;
