@@ -1,2 +1,2 @@
-document.getElementById("mileage").textContent = `Mileage: ${15000}`;
-document.getElementById("displacement").textContent = `Displacement: ${2.0}L I4`;
+document.getElementById("brief-description").textContent = `This is a brief description of the car. It provides an overview of the car's features, condition.`;
+document.getElementById("lcoation").textContent = `Location: New York, NY`;
