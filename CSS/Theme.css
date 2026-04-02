@@ -213,7 +213,6 @@ header a:hover{
     box-sizing: border-box;
 }
 #carlistings .car{
-    border: solid 1px magenta;
     margin: auto;
     margin-top: 5px;
     min-width: 350px;
