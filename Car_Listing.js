@@ -1,5 +1,6 @@
 const carname = document.getElementById("car-name");
-const carimage = document.getElementById("main-image");
+const mainimage = document.getElementById("main-image");
+const smallimage = document.querySelectorAll(".small-image");
 const engine = document.getElementById("displacement");
 const transmission = document.getElementById("transmission");
 const drivetrain = document.getElementById("drivetrain");
@@ -11,3 +12,5 @@ const make = document.getElementById("make");
 const model = document.getElementById("model");
 const year = document.getElementById("year");
 const horsepower = document.getElementById("horsepower");
+const price = document.getElementById("current-price");
+const timeleft = document.getElementById("time-left");
