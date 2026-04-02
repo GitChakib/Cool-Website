@@ -10,7 +10,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lexend:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel = "icon" type = "image/svg" href = "Images/Logo_Small.svg">
-  <script src = "Functionality.js" defer> </script>
+  <script src = "Car_Listing.js" defer> </script>
+  <script src = "Search.js" defer> </script>
   </head>
 
 <body>
@@ -20,7 +21,7 @@
        <a href = "Dashboard.html"> <img src= "Images/Logo_Inverted_Small.svg" id = "brand-logo-small"> </a>
      <div class = "search">
       <form>
-       <input type="text" placeholder="Search for cars">
+       <input type="text" placeholder="Search for cars" id = "search-input">
       </form>
      </div>
     <nav>
@@ -34,7 +35,7 @@
    </header>
    <section class = "main-listing">
     <div class = "car-header">
-    <h2 class = "car-name"> Car Name </h2>
+    <h2 id = "car-name"></h2>
     <p class = "brief-description"></p>
     </div>
     <div class = "car-image-block">
