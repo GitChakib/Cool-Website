@@ -16,8 +16,7 @@ const carListings = [{
 }, {
     image: "Images/X88vu.jpg", fullname: "2018 Chevrolet Camaro", ispopular: false, transmission: 1, price: 54000, year: 2018, miles: 15000, make: "Chevrolet", model: "Camaro", briefDescription: "6.2-Liter V8, Limited-Slip Differential, Mostly Unmodified", location: "Los Angeles, CA"
 }];
-
-const container = document.querySelector(".car-listing");
+const container = document.getElementById("carlistings");
 
 carListings.forEach(carObj => {
   const card = document.createElement("div");
