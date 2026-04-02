@@ -2,8 +2,13 @@
     .all-listings-nav h2{
         display:none
     }
+    .filters{
+        justify-content: center;
+        margin: auto;
+        min-width: 280px;
+    }
     .all-listings-nav .dropdown{
-        margin-right: 0px;
+        margin-right: 0 !important;
     }
     #sign-up{
         font-size: 15px;
@@ -100,6 +105,7 @@ header a:hover{
     padding-bottom: 10px;
     justify-content: center;
 }
+
 .all-listings-nav .dropdown{
     position: relative;
     margin: auto;
@@ -123,7 +129,7 @@ header a:hover{
 }
 .filters{
     display: flex;
-    padding: 10px;
+    margin-top: 7px;
 }
 .menu{
     display: none;
@@ -217,12 +223,18 @@ header a:hover{
     margin-top: 5px;
     min-width: 350px;
     min-height: 400px;
+    box-sizing: border-box;
 }
+
 .car img{
-    max-width: 340px;
+    box-sizing: border-box;
+    justify-content: center;
+    margin: auto;
+    max-width: 350px;
     max-height: 250px;
     aspect-ratio: 4/3;
-    width: 100%; height: 95%;
+    width: 100%;
+    height: auto;
     border-radius: 10px;
 }
 .car .brief-description{
@@ -310,7 +322,8 @@ a:hover{
     display: block;
 }
 .car-details{
-    max-width: 903px;
+    padding-right: 500px;
+    max-width: 1000px;
     margin: auto;
     max-height: 1000px;
 }
