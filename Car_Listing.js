@@ -1,1 +1,8 @@
-const carname = document.getElementById("car-name").textContent = "audi";
+const carname = document.getElementById("car-name");
+const carimage = document.getElementById("main-image");
+const engine = document.getElementById("displacement");
+const transmission = document.getElementById("transmission");
+const drivetrain = document.getElementById("drivetrain");
+const vin = document.getElementById("vin");
+const color = document.getElementById("exterior-color");
+const mileage = document.getElementById("mileage");

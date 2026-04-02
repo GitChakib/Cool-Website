@@ -24,6 +24,7 @@
     #about-us{
         display: none;
     }
+    
     #auction-a-car{
         display: none;
     }
@@ -303,7 +304,7 @@ a:hover{
     max-width: 1500px;
     margin: auto;
 }
-.main-image img{
+#main-image img{
     width: 100%;
     height: auto;
     display: block;
@@ -321,12 +322,7 @@ a:hover{
     height: auto;
     display: block;
 }
-.car-details{
-    padding-right: 500px;
-    max-width: 1000px;
-    margin: auto;
-    max-height: 1000px;
-}
+
 .sub-category{
     margin: 10px;
     font-size: 110%;
@@ -337,9 +333,12 @@ a:hover{
     display: flex;
     margin: auto;
 }
-.details-border{
+#details-border{
     margin-top: 20px;
     border: 1px solid #222D43;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .single-detail{
     margin: 10px;
