@@ -1,1 +1,1 @@
-console.log("Car_Listing.js loaded");
+const carname = document.getElementById("car-name").textContent = "audi";
