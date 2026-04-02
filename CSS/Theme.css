@@ -343,3 +343,17 @@ a:hover{
 .single-detail{
     margin: 10px;
 }
+#price-and-time{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #222D43;
+    border-radius: 10px;
+    padding: 5px;
+}
+#current-price{
+    border-radius: 10px;
+    width: 90px;
+}
