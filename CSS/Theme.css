@@ -304,7 +304,7 @@ a:hover{
     max-width: 1500px;
     margin: auto;
 }
-#main-image img{
+#main-image {
     width: 100%;
     height: auto;
     display: block;
