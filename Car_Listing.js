@@ -32,4 +32,7 @@ year.textContent = fakecar.year;
 horsepower.textContent = `${fakecar.horsepower} hp`;
 price.textContent = `$${fakecar.price.toLocaleString()}`;
 timeleft.textContent = fakecar.timeLeft;
-const smallimages = document.querySelector(".small-image");
+const smallimages = document.querySelectorAll(".small-image");
+smallimages.forEach((img) => {
+    img.src = `Images/w48at.jpg`;
+});
