@@ -174,11 +174,12 @@ header a:hover{
     margin: 20px auto;
     overflow: hidden;
     border-radius: 12px;
-    transition: opacity 1s ease-in-out;
+    transition: opacity 2s ease-in-out;
     opacity: 0;
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1;
 }
 
 .popular-listings .car.active{

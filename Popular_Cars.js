@@ -10,7 +10,7 @@ async function fetchPopularCars() {
 
         if (popularCars.length === 0) return;
         renderCar(currentIndex);
-        setInterval(nextCar, 10000);
+        setInterval(nextCar, 7000);
 
     } catch (error) {
         console.error("Error:", error);
@@ -34,19 +34,15 @@ function renderCar(index) {
             </div>
         </div>
     `;
-
-    target.style.opacity = 0;
-    
+    target.style.opacity = 0.2;
     setTimeout(() => {
         target.innerHTML = html;
-        target.style.transition = "opacity 0.8s ease";
+        target.style.transition = "opacity 1.2s ease";
         target.style.opacity = 1;
     }, 800);
 }
-
 function nextCar() {
     currentIndex = (currentIndex + 1) % popularCars.length;
     renderCar(currentIndex);
 }
-
 document.addEventListener("DOMContentLoaded", fetchPopularCars);
