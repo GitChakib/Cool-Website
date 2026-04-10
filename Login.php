@@ -33,7 +33,7 @@
 <section id="login">
  <div id="login-head">
   <h1 id="sign-up-title">Sign Up, It's Free!</h1>
-  <p id="signup-details">Fill in your details to create an account (They don't need to be real, Just something you can remember)</p>
+  <p id="signup-details">Fill in your details to create an account (They don't need to be real, Just something you can remember for a while)</p>
  </div>
     <div id="login-space">
      <form action="register.php" method="POST">
@@ -47,7 +47,7 @@
       <input type="text" name="last_name">
       <h3>Username</h3>
       <input type="text" name="username">
-      <button type="submit">Register</button>
+      <button type="submit" id = "register">Register</button>
       </form>
     </div>
 </section>
