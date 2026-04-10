@@ -373,20 +373,22 @@ a:hover{
     width: 90px;
 }
 #login{
-    margin-top: 200px;
+    margin-top: 150px;
+    margin: auto;
+    align-items: center;
 }
 #login-space{
     text-align: left;
     padding: 50px;
-    margin-top: 100px;
     justify-content: left;
-    display: block;
+    display: flexbox;
     width: 100%;
     max-height: 700px;
     max-width: 700px;
     margin: auto;
     border-radius: 10px;
     background-color: #1b2331;
+    box-sizing: border-box;
 }
 #login-space input{
     border-radius: 10px;
@@ -396,7 +398,7 @@ a:hover{
     background-color: #0c1018;
     border: none;
     height: 40px;
-    width: 300px;
+    max-width: 300px;
 }
 #login-space button{
     margin-top: 30px;
@@ -405,21 +407,26 @@ a:hover{
     height: 50px;
     border: none;
     border-radius: 10px;
-    font-size: 15px;
+    font-size: 16px;
     font-family: 'Noto sans';
 }
 #sign-up-title{
-    display: flex;
+    display: block;
     margin: auto;
-    max-width: 300px;
     text-align: center;
     justify-content: center;
 }
 #login-head{
-    max-width: 500px;
-    margin: auto;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    display: block;
 }
 #signup-details{
+    max-width: 700px;
     justify-content: center;
     text-align: center;
+    margin: auto;
+    display: block;
 }

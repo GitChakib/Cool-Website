@@ -10,6 +10,7 @@ async function loadListingDetails() {
     try {
         const response = await fetch(`fetch_car_details.php?id=${carId}`);
         const car = await response.json();
+        document.title = `${car.full_name}`;
 
         document.getElementById("car-name").textContent = car.full_name;
         document.getElementById("brief-description").textContent = car.brief_desc;

@@ -30,37 +30,27 @@
     </nav>
     </div>
    </header>
-   <section id = "login">
-    <div id = login-head>
-    <h1 id = "sign-up-title">Sign Up, It's Free!</h1>
-    <p id = "signup-details">Fill in your details to create an account (They don't need to be real, Just something you can remember)</p>
+<section id="login">
+ <div id="login-head">
+  <h1 id="sign-up-title">Sign Up, It's Free!</h1>
+  <p id="signup-details">Fill in your details to create an account (They don't need to be real, Just something you can remember)</p>
+ </div>
+    <div id="login-space">
+     <form action="register.php" method="POST">
+      <h3>Email</h3>
+      <input type="email" name="email" id="email-input" required>
+      <h3>Password</h3>
+      <input type="password" name="password" id="password-input" required>
+      <h3>First Name</h3>
+      <input type="text" name="first_name">
+      <h3>Last Name</h3>
+      <input type="text" name="last_name">
+      <h3>Username</h3>
+      <input type="text" name="username">
+      <button type="submit">Register</button>
+      </form>
     </div>
-    <div id = "login-space">
-        <h3 id = "email">Email</h3>
-        <form>
-            <input type="email" id = "email-input">
-        </form>
-        <h3 id = "password">Password</h3>
-        <form>
-            <input type="password" id = "password-input">
-        </form>
-        <h3 id = "first-name">First Name</h3>
-        <form>
-            <input type = "first name">
-        </form>
-        <h3 id = "last-name">Last Name</h3>
-        <form>
-            <input type = "last name">
-        </form>
-        <h3 id = "username">Username</h3>
-        <form>
-            <input type = "username" id = "username">
-        </form>
-        <button>
-            Register
-        </button>
-    </div>
-   </section>
+</section>
 <footer>
 
    <p>© 2026 Car Marketplace. All rights reserved.</p>
