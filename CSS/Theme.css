@@ -371,3 +371,44 @@ a:hover{
     border-radius: 10px;
     width: 90px;
 }
+#login{
+    margin-top: 200px;
+}
+#login-space{
+    text-align: left;
+    padding: 50px;
+    margin-top: 100px;
+    justify-content: left;
+    display: block;
+    width: 100%;
+    max-height: 500px;
+    max-width: 700px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #1b2331;
+}
+#login-space input{
+    border-radius: 10px;
+    color: white;
+    font-size: 17px;
+    font-family: 'Noto sans';
+    background-color: #0c1018;
+    border: none;
+    height: 40px;
+    width: 300px;
+}
+#sign-up-title{
+    display: flex;
+    margin: auto;
+    max-width: 300px;
+    text-align: center;
+    justify-content: center;
+}
+#login-head{
+    max-width: 500px;
+    margin: auto;
+}
+#signup-details{
+    justify-content: center;
+    text-align: center;
+}

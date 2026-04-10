@@ -4,7 +4,7 @@
   <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Dashboard </title>
+  <title> 4Wheels </title>
   <link rel="stylesheet" href="CSS/Theme.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,7 +29,7 @@
      <div class = "header-buttons">
       <div class = "header-buttons-single"> <a href = "About_Us.html" id = "about-us"> About us </a> </div>
       <div class = "header-buttons-single"> <a href = "Create_Listing.html" id = "auction-a-car"> Auction a Car </a> </div>
-      <div class = "header-buttons-single"> <a href = "Login.html" id = "sign-up"> Sign up </a> </div>
+      <div class = "header-buttons-single"> <a href = "Login.php" id = "sign-up"> Sign up </a> </div>
      </div>
     </nav>
     </div>
