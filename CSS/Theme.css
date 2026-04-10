@@ -274,7 +274,7 @@ body{
     font-weight: 300;
 }
 footer{
-    border-top: 1px gray solid;
+    border-top: 1px #222D43 solid;
     max-width: 1500px; height: 200px;
     margin: auto;
     margin-top: 70px;

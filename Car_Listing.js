@@ -1,38 +1,51 @@
-const carname = document.getElementById("car-name");
-const mainimage = document.getElementById("main-image");
-const smallimage = document.querySelectorAll(".small-image");
-const engine = document.getElementById("displacement");
-const transmission = document.getElementById("transmission");
-const drivetrain = document.getElementById("drivetrain");
-const vin = document.getElementById("vin");
-const color = document.getElementById("exterior-color");
-const mileage = document.getElementById("mileage");
-const city = document.getElementById("location");
-const make = document.getElementById("make");
-const model = document.getElementById("model");
-const year = document.getElementById("year");
-const horsepower = document.getElementById("horsepower");
-const price = document.getElementById("current-price");
-const timeleft = document.getElementById("time-left");
-const brief = document.getElementById("brief-description");
-const fakecar = {    mainimage: "Images/w48at.jpg", fullname: "2024 Mercedes-Benz AMG GLC 43", ispopular: false, transmission: "Manual", price: 68000, year: 2024, miles: 25000, make: "Mercedes-Benz", model: "GLC", engine: "2.0L I4 Turbo", briefdescription: "AWD, 2.0L I4 Turbo, Stock, 385-hp", location: "New York, NY", drivetrain: "AWD", vin: "1A2B3C4D5E6F7G8H9I0J", color: "Black", horsepower: 385, timeLeft: "3 days 4 hours"};
-carname.textContent = fakecar.fullname;
-brief.textContent = fakecar.briefdescription;
-mainimage.src = fakecar.mainimage;
-engine.textContent = fakecar.engine;
-transmission.textContent = fakecar.transmission;
-drivetrain.textContent = fakecar.drivetrain;
-vin.textContent = fakecar.vin;
-color.textContent = fakecar.color;
-mileage.textContent = `${fakecar.miles} Miles`;
-city.textContent = fakecar.location;
-make.textContent = fakecar.make;
-model.textContent = fakecar.model;
-year.textContent = fakecar.year;
-horsepower.textContent = `${fakecar.horsepower} hp`;
-price.textContent = `$${fakecar.price.toLocaleString()}`;
-timeleft.textContent = fakecar.timeLeft;
-const smallimages = document.querySelectorAll(".small-image");
-smallimages.forEach((img) => {
-    img.src = `Images/w48at.jpg`;
-});
+async function loadListingDetails() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const carId = urlParams.get('id');
+
+    if (!carId) {
+        console.error("No car ID found in URL");
+        return;
+    }
+
+    try {
+        const response = await fetch(`fetch_car_details.php?id=${carId}`);
+        const car = await response.json();
+
+        document.getElementById("car-name").textContent = car.full_name;
+        document.getElementById("brief-description").textContent = car.brief_desc;
+        document.getElementById("main-image").src = car.main_image_url;        
+        document.getElementById("displacement").textContent = car.engine;
+        document.getElementById("transmission").textContent = car.transmission;
+        document.getElementById("drivetrain").textContent = car.drivetrain;
+        document.getElementById("vin").textContent = car.vin;
+        document.getElementById("exterior-color").textContent = car.color;
+        document.getElementById("mileage").textContent = `${Number(car.miles).toLocaleString()} Miles`;
+        document.getElementById("location").textContent = car.location;
+        document.getElementById("make").textContent = car.make;
+        document.getElementById("model").textContent = car.model;
+        document.getElementById("year").textContent = car.year;
+        document.getElementById("horsepower").textContent = `${car.horsepower} hp`;
+        
+        // 2. Dynamic Price and Time
+        document.getElementById("current-price").textContent = `$${Number(65000).toLocaleString()}`;
+        document.getElementById("time-left").textContent = car.end_date || "Coming Soon";
+
+        const smallImages = document.querySelectorAll(".small-image");
+        if (car.all_images && car.all_images.length > 0) {
+            smallImages.forEach((img, index) => {
+                if (car.all_images[index]) {
+                    img.src = car.all_images[index];
+                    img.style.display = "block";
+                } else {
+                    img.style.display = "none";
+                }
+            });
+        }
+
+    } catch (error) {
+        console.error("Error loading car details:", error);
+        document.getElementById("car-name").textContent = "Failed to load listing.";
+    }
+}
+
+loadListingDetails();

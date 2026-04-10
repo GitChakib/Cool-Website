@@ -5,17 +5,14 @@ async function loadCars() {
         // 1. Fetch data from your new PHP file
         const response = await fetch('fetch_auctions.php');
         const carListings = await response.json();
-
-        // 2. Clear the container (in case there's old data)
         container.innerHTML = "";
 
-        // 3. Your original loop (now using database data!)
         carListings.forEach(carObj => {
             const card = document.createElement("div");
             card.className = "car";
 
             const link = document.createElement("a");
-            link.href = "Car_Listing.php"; // Changed to .php since you're migrating
+            link.href = `Car_Listing.php?id=${carObj.id}`;
 
             const img = document.createElement("img");
             // Make sure your DB column is named 'mainimage'
@@ -26,7 +23,7 @@ async function loadCars() {
 
             const title = document.createElement("h3");
             const titleLink = document.createElement("a");
-            titleLink.href = "Car_Listing.php";
+            titleLink.href = `Car_Listing.php?id=${carObj.id}`;
             // Make sure these column names match your DB exactly
             titleLink.textContent = carObj.full_name; 
             title.appendChild(titleLink);
