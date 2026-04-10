@@ -1,7 +1,6 @@
 <?php
 include 'config.php';
 
-// This query joins the cars table with the images table
 $sql = "SELECT 
             cars.*, 
             images.url AS main_image 

@@ -40,14 +40,14 @@
     <div class = "car-image-block">
        <img src = "Images/NI7l9.jpg" id = "main-image">
       <div class = "image-cluster">
-        <img src = "Images/3RemOOYR-UpE1ESR.jpg" class = "small-image">
-        <img src = "Images/3RemOOYR--GalX2-.jpg" class = "small-image">
-        <img src = "Images/3RemOOYR-fu1nSGy.jpeg" class = "small-image">
-        <img src = "Images/3RemOOYR-e0NqQ9y.jpg" class = "small-image">
-        <img src = "Images/3RemOOYR-_xYCVE4.jpg" class = "small-image">
-        <img src = "Images/3RemOOYR-oN9VuAt.jpg" class = "small-image">
-        <img src = "Images/3RemOOYR-F7jRS6m.jpg" class = "small-image">
-        <img src = "Images/s-NXOW1gY.jpeg" class = "small-image" id = "last-small-image">
+        <img class = "small-image">
+        <img class = "small-image">
+        <img class = "small-image">
+        <img class = "small-image">
+        <img class = "small-image">
+        <img class = "small-image">
+        <img class = "small-image">
+        <img class = "small-image" id = "last-small-image">
       </div>
     </div>
     <div id = "price-and-time">
@@ -70,10 +70,6 @@
      <div class = "category">
       <p class = "sub-category"> Engine </p>
       <p class = "single-detail" id = "displacement"></p>
-     </div>
-     <div class = "category">
-      <p class = "sub-category">Drivetrain</p>
-      <p class = "single-detail" id = "drivetrain"></p>
      </div>
       <div class = "category">
       <p class = "sub-category"> Transmission </p>

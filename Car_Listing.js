@@ -16,17 +16,15 @@ async function loadListingDetails() {
         document.getElementById("main-image").src = car.main_image_url;        
         document.getElementById("displacement").textContent = car.engine;
         document.getElementById("transmission").textContent = car.transmission;
-        document.getElementById("drivetrain").textContent = car.drivetrain;
         document.getElementById("vin").textContent = car.vin;
         document.getElementById("exterior-color").textContent = car.color;
-        document.getElementById("mileage").textContent = `${Number(car.miles).toLocaleString()} Miles`;
+        document.getElementById("mileage").textContent = `${Number(car.mileage).toLocaleString()} Miles`;
         document.getElementById("location").textContent = car.location;
         document.getElementById("make").textContent = car.make;
         document.getElementById("model").textContent = car.model;
         document.getElementById("year").textContent = car.year;
         document.getElementById("horsepower").textContent = `${car.horsepower} hp`;
         
-        // 2. Dynamic Price and Time
         document.getElementById("current-price").textContent = `$${Number(65000).toLocaleString()}`;
         document.getElementById("time-left").textContent = car.end_date || "Coming Soon";
 

@@ -160,6 +160,8 @@ header a:hover{
     max-height: 650px;
     margin: auto;
     padding-top: 3px;
+    position: relative;
+    overflow: hidden;
 }
 .popular-listings h1{
     margin: 10px;
@@ -172,7 +174,17 @@ header a:hover{
     margin: 20px auto;
     overflow: hidden;
     border-radius: 12px;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
 
+.popular-listings .car.active{
+    position: relative;
+    opacity: 1;
+    z-index: 2;
 }
 .popular-listings .car img{
     max-height: 600px;
@@ -315,6 +327,7 @@ a:hover{
     gap: 1px;
     width: 100%;
     margin: auto;
+    overflow: hidden;
 }
 .image-cluster img {
     max-width: 300px;
@@ -322,7 +335,6 @@ a:hover{
     height: auto;
     display: block;
 }
-
 .sub-category{
     margin: 10px;
     font-size: 110%;

@@ -2,7 +2,6 @@ const container = document.getElementById("carlistings");
 
 async function loadCars() {
     try {
-        // 1. Fetch data from your new PHP file
         const response = await fetch('fetch_auctions.php');
         const carListings = await response.json();
         container.innerHTML = "";
@@ -15,7 +14,6 @@ async function loadCars() {
             link.href = `Car_Listing.php?id=${carObj.id}`;
 
             const img = document.createElement("img");
-            // Make sure your DB column is named 'mainimage'
             img.src = carObj.main_image; 
 
             link.appendChild(img);
@@ -24,7 +22,6 @@ async function loadCars() {
             const title = document.createElement("h3");
             const titleLink = document.createElement("a");
             titleLink.href = `Car_Listing.php?id=${carObj.id}`;
-            // Make sure these column names match your DB exactly
             titleLink.textContent = carObj.full_name; 
             title.appendChild(titleLink);
             card.appendChild(title);

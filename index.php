@@ -12,6 +12,7 @@
   <link rel = "icon" type = "image/svg" href = "Images/Logo_Small.svg">
   <script src = "Dashboard.js" defer> </script>
   <script src = "Search.js" defer> </script>
+  <script src = "Popular_Cars.js" defer> </script>
   </head>
 
 <body>
@@ -34,16 +35,7 @@
     </div>
    </header>
 <section class = "popular-listings">
-  <div class = "popular-listings">
-    <div class = "car">
-     <a href = "Car_Listing.html"><img src = "Images/LqnhS.jpg"> </a>
-     <div class = "overlay2" style = "pointer-events: none">
-     <h3> Popular </h3>
-     </div>
-     <div class = "overlay" style="pointer-events: none;">
-     <h3> 2025 Ferrari 296 GTS </h3>
-     <p> 3.0L Hybrid, 1100KM, RWD, 7 Speed Dual Clutch (Automatic) </p>
-     </div>
+  <div class="popular-listings-container" id="popular-cars-target">
   </div>
 </section>   
 
