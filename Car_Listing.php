@@ -27,7 +27,7 @@
      <div class = "header-buttons">
       <div class = "header-buttons-single"> <a href = "About_Us.html" id = "about-us"> About us </a> </div>
       <div class = "header-buttons-single"> <a href = "Create_Listing.html" id = "auction-a-car"> Auction a Car </a> </div>
-      <div class = "header-buttons-single"> <a href = "Login.html" id = "sign-up"> Sign up </a> </div>
+      <div class = "header-buttons-single"> <a href = "Register.php" id = "sign-up"> Sign up </a> </div>
      </div>
     </nav>
     </div>

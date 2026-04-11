@@ -434,3 +434,19 @@ a:hover{
 #register{
     display: block;
 }
+#register:hover{
+    cursor: pointer;
+}
+#login-button{
+    display: block;
+}
+#login-button:hover{
+    cursor: pointer;
+}
+#here{
+    justify-content: center;
+    text-align: center;
+}
+#here2:hover{
+    color: #e3ca11;
+}

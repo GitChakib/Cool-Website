@@ -32,17 +32,24 @@
    </header>
 <section id="login">
  <div id="login-head">
-  <h1 id="sign-up-title">Login</h1>
-  <p id="signup-details"> Fill in your details to log into your account </p>
+  <h1 id="sign-up-title">Sign Up, It's Free!</h1>
+  <p id="signup-details">Fill in your details to create an account (They don't need to be real, Just something you can remember for a while)</p>
  </div>
     <div id="login-space">
-     <form action="login_user.php" method="POST">
+     <form action="register_user.php" method="POST">
       <h3>Email</h3>
-      <input type="email" name="email-login" id="email-input" required>
+      <input type="email" name="email" id="email-input" required>
       <h3>Password</h3>
-      <input type="password" name="password-login" id="password-input" required>
-      <button type="submit" id = "login-button">Login</button>
+      <input type="password" name="password" id="password-input" required>
+      <h3>First Name</h3>
+      <input type="text" name="first_name">
+      <h3>Last Name</h3>
+      <input type="text" name="last_name">
+      <h3>Username</h3>
+      <input type="text" name="user_name">
+      <button type="submit" id = "register">Register</button>
       </form>
+      <p id = "here"> Already have an account? Click<a href = "login.php" id = "here2"> here <a> </p>
     </div>
 </section>
 <footer>
