@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -25,7 +26,12 @@
      <div class = "header-buttons">
       <div class = "header-buttons-single"> <a href = "About_Us.php" id = "about-us"> About us </a> </div>
       <div class = "header-buttons-single"> <a href = "Create_Listing.php" id = "auction-a-car"> Auction a Car </a> </div>
+      <?php if (!isset($_SESSION['user_id'])): ?>
       <div class = "header-buttons-single"> <a href = "Register.php" id = "sign-up"> Sign up </a> </div>
+      <?php endif; ?>
+      <?php if (isset($_SESSION['user_id'])): ?>
+        <img src="Images/profile_logo.svg" id="profile-logo">
+      <?php endif;?>
      </div>
     </nav>
     </div>
@@ -54,7 +60,7 @@
 </section>
 <footer>
 
-   <p>© 2026 Car Marketplace. All rights reserved.</p>
+   <p>© 2026 4Wheels. All rights reserved.</p>
    <p>Contact me: chakibfehd.senoussi@etu.univ-batna2.dz</p>
 
  </footer>

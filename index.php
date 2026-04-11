@@ -1,14 +1,6 @@
-<?php
-session_start();
-if (!isset($_SESSION['user_id'])) {
-    header("Location: Register.php");
-    exit();
-}
-include 'config.php';
-?>
+<?php session_start();?>
 <!DOCTYPE html>
 <html>
-
   <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,9 +27,16 @@ include 'config.php';
      </div>
     <nav>
      <div class = "header-buttons">
-      <div class = "header-buttons-single"> <a href = "About_Us.html" id = "about-us"> About us </a> </div>
+      <div class = "header-buttons-single"> <a href = "About_Us.php" id = "about-us"> About us </a> </div>
       <div class = "header-buttons-single"> <a href = "Create_Listing.html" id = "auction-a-car"> Auction a Car </a> </div>
+      <?php if (!isset($_SESSION['user_id'])): ?>
       <div class = "header-buttons-single"> <a href = "Register.php" id = "sign-up"> Sign up </a> </div>
+      <div class = "header-buttons-single">
+      <?php endif; ?>
+      <?php if (isset($_SESSION['user_id'])): ?>
+        <img src="Images/profile_logo.svg" id="profile-logo">
+      <?php endif; ?>
+      </div>
      </div>
     </nav>
     </div>
@@ -87,7 +86,7 @@ include 'config.php';
   </section>
  <footer>
 
-   <p>© 2026 Car Marketplace. All rights reserved.</p>
+   <p>© 2026 4Wheels. All rights reserved.</p>
    <p>Contact me: chakibfehd.senoussi@etu.univ-batna2.dz</p>
 
  </footer>

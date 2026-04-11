@@ -287,11 +287,12 @@ body{
     font-weight: 300;
 }
 footer{
+    bottom: 0;
+    max-height: 200px;
     border-top: 1px #222D43 solid;
-    max-width: 1500px; height: 200px;
     margin: auto;
     margin-top: 70px;
-    background-color: #0c1018;
+    background-color: #1b2331;
 }
 a{
     color: white;
@@ -449,4 +450,35 @@ a:hover{
 }
 #here2:hover{
     color: #e3ca11;
+}
+.header-buttons #profile-logo{
+    top: 0;
+}
+#about-us-main{
+    margin: auto;
+    max-width: 1500px;
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;
+}
+#whycolor{
+    display: inline;
+}
+#whycolor2{
+    display: inline;
+    color: #e3ca11;
+}
+#love{
+    padding-top: 100px;
+    margin: auto;
+    max-width: 1500px;
+}
+#about-us-main p{
+    font-weight: 400;
+}
+#gray-logo{
+    right: 0;
+    padding-top: 50px;
+    max-width: 200px;
+    text-align: right;
 }
