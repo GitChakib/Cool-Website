@@ -36,7 +36,7 @@
   <p id="signup-details">Fill in your details to create an account (They don't need to be real, Just something you can remember for a while)</p>
  </div>
     <div id="login-space">
-     <form action="register.php" method="POST">
+     <form action="fetch_user.php" method="POST">
       <h3>Email</h3>
       <input type="email" name="email" id="email-input" required>
       <h3>Password</h3>
@@ -46,7 +46,7 @@
       <h3>Last Name</h3>
       <input type="text" name="last_name">
       <h3>Username</h3>
-      <input type="text" name="username">
+      <input type="text" name="user_name">
       <button type="submit" id = "register">Register</button>
       </form>
     </div>
