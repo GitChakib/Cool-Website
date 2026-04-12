@@ -296,10 +296,10 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    margin-bottom: 0;
 }
 footer{
     background-color: #1b2331;
-    margin-top: auto;
 }
 a{
     color: white;
@@ -382,16 +382,14 @@ a:hover{
     width: 90px;
 }
 #login{
-    margin-top: 150px;
-    margin: auto;
+    margin-top: 250px;
+    margin-left: auto;
     align-items: center;
-    flex: 1;
 }
 #login-space{
     text-align: left;
     padding: 50px;
     justify-content: left;
-    display: flex;
     width: 100%;
     max-height: 700px;
     max-width: 700px;

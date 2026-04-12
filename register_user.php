@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             VALUES ('$first_name', '$last_name', '$user_name', '$email', '$hashed_password')";
 
     if ($conn->query($sql) === TRUE) {
-        header ("location: index.php");
+        header ("location: login.php");
         exit();}
 } else {
     echo "login error";
