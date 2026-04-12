@@ -286,13 +286,20 @@ body{
     font-family: 'Noto sans', sans-serif;
     font-weight: 300;
 }
-footer{
-    bottom: 0;
-    max-height: 200px;
+#footer-container{
     border-top: 1px #222D43 solid;
+    max-width: 1500px; 
+    height: max-content;
     margin: auto;
     margin-top: 70px;
     background-color: #1b2331;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+footer{
+    background-color: #1b2331;
+    margin-top: auto;
 }
 a{
     color: white;
@@ -357,6 +364,7 @@ a:hover{
 }
 .single-detail{
     margin: 10px;
+    font-weight: 400;
 }
 #price-and-time{
     display: flex;
@@ -377,12 +385,13 @@ a:hover{
     margin-top: 150px;
     margin: auto;
     align-items: center;
+    flex: 1;
 }
 #login-space{
     text-align: left;
     padding: 50px;
     justify-content: left;
-    display: flexbox;
+    display: flex;
     width: 100%;
     max-height: 700px;
     max-width: 700px;
@@ -481,4 +490,22 @@ a:hover{
     padding-top: 50px;
     max-width: 200px;
     text-align: right;
+}
+#links {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
+  column-gap: 20px;                    
+  justify-content: end;      
+  margin-top: 20px;             
+}
+
+#links #links-title {
+  grid-column: 1 / span 2;
+  text-align: left;
+}
+.link{
+    font-weight: 400;
+    display: block;
+    margin: 10px;
 }

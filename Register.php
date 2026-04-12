@@ -59,11 +59,22 @@
     </div>
 </section>
 <footer>
-
-   <p>© 2026 4Wheels. All rights reserved.</p>
-   <p>Contact me: chakibfehd.senoussi@etu.univ-batna2.dz</p>
-
- </footer>
+  <div id = "footer-container">
+    <div id = "left-footer">
+    <img src = "Images/Logo_Gray.svg" id = "gray-logo">
+    <p>© 4Wheels. All rights reserved.</p>
+    <p>Contact me: chakibfehd.senoussi@etu.univ-batna2.dz</p>
+   </div>
+   <div id = "links">
+    <h3 id = "links-title">Useful links</h3> 
+    <a href = "About_Us.php" class = "link">About Us</a>
+    <a href = "index.php" class = "link">Homepage</a>
+    <a href = "Register.php" class = "link">Register</a>
+    <a href = "login.php" class = "link">Login</a>
+    <a href = "About_Us.php" class = "link">Auction a Car</a>
+   </div>
+  </div>
+</footer>
 </body>
 </html>
 </html>
