@@ -1,5 +1,4 @@
 const container = document.getElementById("carlistings");
-
 async function loadCars() {
     try {
         const response = await fetch('fetch_auctions.php');

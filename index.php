@@ -19,8 +19,8 @@
 <body>
    <header>
     <div class = "header-content">
-       <a href = "index.php"> <img src= "Images/Logo_Inverted.svg" id = "brand-logo"> </a>
-       <a href = "index.php"> <img src= "Images/Logo_Inverted_Small.svg" id = "brand-logo-small"> </a>
+       <a href = "index.php"> <img src= "Images/Logo.svg" id = "brand-logo"> </a>
+       <a href = "index.php"> <img src= "Images/Logo_Small.svg" id = "brand-logo-small"> </a>
      <div class = "search">
       <form>
        <input type="text" placeholder="Search for cars" id = "search-input">

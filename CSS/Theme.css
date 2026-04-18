@@ -45,6 +45,17 @@
     --text-color: #ffffff;
     --accent-color: #e3ca11;
 }
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-color); 
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    border: 3px solid var(--bg-color);
+}
 header{
     display: flex;
     max-width: 1500px;
@@ -140,7 +151,7 @@ header a:hover{
     font-family: 'Noto Sans';
     background-color: var(--bg-color);
     border-radius: 10px;
-    border: solid 1px --third-color;
+    border: solid 1px var(--third-color);
     cursor: pointer;
     position: relative;
 }
@@ -154,7 +165,7 @@ header a:hover{
     background-color: var(--secondary-color);
     border-radius: 5px;
     min-width: 160px;
-    border: solid 1px --third-color;
+    border: solid 1px var(--third-color);
     z-index: 10;
 }
 .dropdown .menu a{
@@ -215,7 +226,7 @@ header a:hover{
     width: 100%;
     position: absolute;  
     bottom: 0px;        
-    color: var(--text-color);
+    color: #ffffff;
     background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%)
 }
 .popular-listings .car .overlay h3{
@@ -232,7 +243,7 @@ header a:hover{
     width: 100%;
     position: absolute;  
     top: 0px;        
-    color: var(--text-color);
+    color: #ffffff;
     background: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%)
 }
 .popular-listings .car .overlay2 h3{
@@ -303,7 +314,6 @@ body{
     font-weight: 300;
 }
 #footer-container{
-    border-top: 1px --third-color solid;
     max-width: 1500px; 
     height: max-content;
     margin: auto;
@@ -373,7 +383,7 @@ a:hover{
 }
 #details-border{
     margin-top: 20px;
-    border: 1px solid --third-color;
+    border: 1px solid var(--third-color);
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
@@ -388,7 +398,7 @@ a:hover{
     max-width: 990px;
     margin: auto;
     margin-top: 20px;
-    background-color: --third-color;
+    background-color: var(--third-color);
     border-radius: 10px;
     padding: 5px;
     padding-inline: 10px;

@@ -40,7 +40,6 @@ async function loadListingDetails() {
                 }
             });
         }
-
     } catch (error) {
         console.error("Error loading car details:", error);
         document.getElementById("car-name").textContent = "Failed to load listing.";
