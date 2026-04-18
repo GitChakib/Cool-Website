@@ -34,11 +34,11 @@
     --secondary-color: #8b8b8b;
     --third-color: #5c5c5c;
     --fourth-color: #474747;
-    --text-color: #262626;
+    --text-color: #0c0c0c;
     --accent-color: #e3ca11;
 }
 [data-theme="dark"]{
-    --bg-color: #0c0c0c;
+    --bg-color: #0c1018;
     --secondary-color: #1b2331;
     --third-color: #222D43;
     --fourth-color: #254077;
@@ -49,7 +49,7 @@ header{
     display: flex;
     max-width: 1500px;
     position: fixed;
-    background-color: #0c1018;
+    background-color: var(--bg-color);
     top: 0;
     left: 0;
     right: 0;
@@ -57,7 +57,7 @@ header{
     margin: auto;
     z-index: 1000;
     padding-bottom: 20px;
-    border-bottom: solid #1b2331 1px;
+    border-bottom: solid var(--secondary-color) 1px;
 }
 .header-content{
     max-width: 1500px;
@@ -81,10 +81,10 @@ header a:hover{
 }
 #sign-up{
     white-space: nowrap;
-    background-color: #e3ca11;
+    background-color: var(--accent-color);
     border-radius: 20px;
     padding: 12px;
-    color: #0c1018;
+    color: var(--bg-color);
 }
 #brand-logo{
     margin-top: 20px;
@@ -101,10 +101,10 @@ header a:hover{
     width: 400px;
 }
 .search input{
-    color: #ffffff;
+    color: var(--text-color);
     font-size: 15px;
     font-family: 'Noto sans';
-    background-color:#1b2331;
+    background-color:var(--secondary-color);
     max-width: 400px;
     height: 40px;
     border-radius: 20px;
@@ -135,12 +135,12 @@ header a:hover{
 .dropdown button{
     padding: 10px;
     width: auto;
-    color: #ffffff;
+    color: var(--text-color);
     font-size: 17px;
     font-family: 'Noto Sans';
-    background-color: #0c1018;
+    background-color: var(--bg-color);
     border-radius: 10px;
-    border: solid 1px #222D43;
+    border: solid 1px --third-color;
     cursor: pointer;
     position: relative;
 }
@@ -151,10 +151,10 @@ header a:hover{
 .menu{
     display: none;
     position: absolute;
-    background-color: #1b2331;
+    background-color: var(--secondary-color);
     border-radius: 5px;
     min-width: 160px;
-    border: solid 1px #222D43;
+    border: solid 1px --third-color;
     z-index: 10;
 }
 .dropdown .menu a{
@@ -215,7 +215,7 @@ header a:hover{
     width: 100%;
     position: absolute;  
     bottom: 0px;        
-    color: #ffffff;
+    color: var(--text-color);
     background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%)
 }
 .popular-listings .car .overlay h3{
@@ -232,7 +232,7 @@ header a:hover{
     width: 100%;
     position: absolute;  
     top: 0px;        
-    color: #ffffff;
+    color: var(--text-color);
     background: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%)
 }
 .popular-listings .car .overlay2 h3{
@@ -276,7 +276,7 @@ header a:hover{
     display: block;
     margin-left: 5px;
     font-size: 15px;
-    color: #254077;
+    color: --fourth-color;
 }
 .car h3{
     margin: 5px;
@@ -297,28 +297,28 @@ header a:hover{
 body{
     margin: 0;
     margin-top: 90px;
-    background-color: #0c1018;
-    color: #ffffff;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     font-family: 'Noto sans', sans-serif;
     font-weight: 300;
 }
 #footer-container{
-    border-top: 1px #222D43 solid;
+    border-top: 1px --third-color solid;
     max-width: 1500px; 
     height: max-content;
     margin: auto;
     margin-top: 70px;
-    background-color: #1b2331;
+    background-color: var(--secondary-color);
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 0;
 }
 footer{
-    background-color: #1b2331;
+    background-color: var(--secondary-color);
 }
 a{
-    color: #ffffff;
+    color: var(--text-color);
     text-decoration: none;
 }
 a:hover{
@@ -373,7 +373,7 @@ a:hover{
 }
 #details-border{
     margin-top: 20px;
-    border: 1px solid #222D43;
+    border: 1px solid --third-color;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
@@ -388,7 +388,7 @@ a:hover{
     max-width: 990px;
     margin: auto;
     margin-top: 20px;
-    background-color: #222D43;
+    background-color: --third-color;
     border-radius: 10px;
     padding: 5px;
     padding-inline: 10px;
@@ -411,15 +411,15 @@ a:hover{
     max-width: 700px;
     margin: auto;
     border-radius: 10px;
-    background-color: #1b2331;
+    background-color: var(--secondary-color);
     box-sizing: border-box;
 }
 #login-space input{
     border-radius: 10px;
-    color: #ffffff;
+    color: var(--text-color);
     font-size: 17px;
     font-family: 'Noto sans';
-    background-color: #0c1018;
+    background-color: var(--bg-color);
     border: none;
     height: 40px;
     width: 300px;
@@ -427,7 +427,7 @@ a:hover{
 }
 #login-space button{
     margin-top: 30px;
-    background-color: #e3ca11;
+    background-color: var(--accent-color);
     width: 100px;
     height: 50px;
     border: none;
@@ -472,7 +472,7 @@ a:hover{
     text-align: center;
 }
 #here2:hover{
-    color: #e3ca11;
+    color: var(--accent-color);
 }
 .header-buttons #profile-logo{
     top: 0;
@@ -489,7 +489,7 @@ a:hover{
 }
 #whycolor2{
     display: inline;
-    color: #e3ca11;
+    color: var(--accent-color);
 }
 #love{
     padding-top: 100px;
@@ -526,8 +526,8 @@ a:hover{
 #maintenance{
     text-align: center;
     margin: auto;
-    max-width: 1500px;
-    background-color: #1b2331;
+    max-width: 1200px;
+    background-color: var(--secondary-color);
     border-radius: 10px;
     margin-top: 250px;
     margin-bottom: 255px;
@@ -543,5 +543,14 @@ a:hover{
     padding-left: 30px;
 }
 #rel-to-index:hover{
-    color: #e3ca11;
+    color: var(--accent-color);
+}
+#theme-change{
+    width: 30px;
+    border: none;
+    background: none;
+    padding-left: 5px;    
+}
+#theme-change:hover{
+    cursor: pointer;
 }

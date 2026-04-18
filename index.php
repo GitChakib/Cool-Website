@@ -13,6 +13,7 @@
   <script src = "Dashboard.js" defer> </script>
   <script src = "Search.js" defer> </script>
   <script src = "Popular_Cars.js" defer> </script>
+  <script src = "theme-change.js" defer> </script>
   </head>
 
 <body>
@@ -98,6 +99,7 @@
     <a href = "Register.php" class = "link">Register</a>
     <a href = "login.php" class = "link">Login</a>
     <a href = "About_Us.php" class = "link">Auction a Car</a>
+    <button id = "theme-change"><img src = "Images/light_mode_40dp_E3CA11_FILL0_wght400_GRAD0_opsz40.svg" id = "theme-img"></button>
    </div>
   </div>
 </footer>
