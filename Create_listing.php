@@ -37,8 +37,15 @@
     </div>
    </header>
    <section id = "create-a-listing">
-    
+    <div id = "maintenance">
+      <h2 id = "maintenance-title">This Page is Under Maintenace </h2>
+      <img src = "Images/construction_40dp_E3CA11_FILL0_wght400_GRAD0_opsz40.svg">
+      <h2> Why You Got this Message?</h2>
+      <img src = "Images/engineering_40dp_E3CA11_FILL0_wght400_GRAD0_opsz40.svg" id = "second-img">
+      <p>Our team is still working on this page so you can't create any listings (for now atleast)</p>
+      <h4>You can check our other cool listings by clicking <a href = "index.php" id = "rel-to-index">here</a> !</h4>
 
+    </div>
 
    </section>
 <footer>

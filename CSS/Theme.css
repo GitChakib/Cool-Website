@@ -29,6 +29,13 @@
         display: none;
     }
 }
+:root{
+    --bg-color: #ffffff;
+    --secondary-color: #8b8b8b;
+    --third-color: #5c5c5c;
+    --text-color: #262626;
+    --accent-color: #e3ca11;
+}
 header{
     display: flex;
     max-width: 1500px;
@@ -506,4 +513,26 @@ a:hover{
     font-weight: 400;
     display: block;
     margin: 10px;
+}
+#maintenance{
+    text-align: center;
+    margin: auto;
+    max-width: 1500px;
+    background-color: #1b2331;
+    border-radius: 10px;
+    margin-top: 250px;
+    margin-bottom: 255px;
+    padding: 20px;
+}
+#maintenance p{
+    font-weight: 400;
+}
+#maintenance img{
+    width: 120px; 
+}
+#second-img{
+    padding-left: 30px;
+}
+#rel-to-index:hover{
+    color: #e3ca11;
 }
