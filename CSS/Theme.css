@@ -33,7 +33,16 @@
     --bg-color: #ffffff;
     --secondary-color: #8b8b8b;
     --third-color: #5c5c5c;
+    --fourth-color: #474747;
     --text-color: #262626;
+    --accent-color: #e3ca11;
+}
+[data-theme="dark"]{
+    --bg-color: #0c0c0c;
+    --secondary-color: #1b2331;
+    --third-color: #222D43;
+    --fourth-color: #254077;
+    --text-color: #ffffff;
     --accent-color: #e3ca11;
 }
 header{
@@ -92,7 +101,7 @@ header a:hover{
     width: 400px;
 }
 .search input{
-    color: white;
+    color: #ffffff;
     font-size: 15px;
     font-family: 'Noto sans';
     background-color:#1b2331;
@@ -126,7 +135,7 @@ header a:hover{
 .dropdown button{
     padding: 10px;
     width: auto;
-    color: white;
+    color: #ffffff;
     font-size: 17px;
     font-family: 'Noto Sans';
     background-color: #0c1018;
@@ -206,7 +215,7 @@ header a:hover{
     width: 100%;
     position: absolute;  
     bottom: 0px;        
-    color: white;
+    color: #ffffff;
     background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%)
 }
 .popular-listings .car .overlay h3{
@@ -223,7 +232,7 @@ header a:hover{
     width: 100%;
     position: absolute;  
     top: 0px;        
-    color: white;
+    color: #ffffff;
     background: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%)
 }
 .popular-listings .car .overlay2 h3{
@@ -289,7 +298,7 @@ body{
     margin: 0;
     margin-top: 90px;
     background-color: #0c1018;
-    color: white;
+    color: #ffffff;
     font-family: 'Noto sans', sans-serif;
     font-weight: 300;
 }
@@ -309,7 +318,7 @@ footer{
     background-color: #1b2331;
 }
 a{
-    color: white;
+    color: #ffffff;
     text-decoration: none;
 }
 a:hover{
@@ -407,7 +416,7 @@ a:hover{
 }
 #login-space input{
     border-radius: 10px;
-    color: white;
+    color: #ffffff;
     font-size: 17px;
     font-family: 'Noto sans';
     background-color: #0c1018;
