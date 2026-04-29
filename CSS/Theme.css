@@ -287,7 +287,7 @@ header a:hover{
     display: block;
     margin-left: 5px;
     font-size: 15px;
-    color: --fourth-color;
+    color: var(--fourth-color);
 }
 .car h3{
     margin: 5px;
